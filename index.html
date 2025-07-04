@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 Star Green Energy | Solar Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #0f9d58, #34a853);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+    }
+    .hero {
+      position: relative;
+      background: url('https://plus.unsplash.com/premium_photo-1682145358254-56e9ab8049ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+      /* background: url('https://images.unsplash.com/photo-1591047139829-ec8a98dd13f0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; */
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.14);
+    }
+    .hero-content {
+      position: relative;
+      text-align: center;
+      max-width: 800px;
+      padding: 20px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+    .hero-content h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .hero-content a {
+      padding: 12px 28px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 36px;
+      color: #2c572c;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      flex: 1 1 280px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #1e3a1e;
+    }
+    .gallery {
+      padding: 60px 20px;
+      background: #fff;
+      text-align: center;
+    }
+    .gallery h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #2c572c;
+    }
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery-images img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .video-section {
+      background-color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .video-section h2 {
+      color: #2c572c;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .video-section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .video-section a {
+      display: inline-block;
+      background: #0f9d58;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .contact {
+      background: #e6f3e6;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .contact a {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 15px 30px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+    footer {
+      background: #1e3a1e;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        height: 60vh;
+      }
+      .hero-content h2 {
+        font-size: 32px;
+      }
+      .hero-content p {
+        font-size: 16px;
+      }
+      .section h2 {
+        font-size: 28px;
+      }
+      .gallery-images img {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+.hero-content a {
+  pointer-events: auto !important;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>7 Star Green Energy</h1>
+    <p>Empowering India with Clean, Subsidized Solar Energy</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Go Solar, Save Big</h2>
+      <p>Reduce your bills and carbon footprint with India’s government-backed solar subsidy program.</p>
+      <a href="https://wa.me/919311641426" target="_blank">Chat with Mr. BP Sharma</a>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <h2>Benefits of Going Solar</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1684/1684375.png" alt="Solar Savings">
+        <h3>Bill Savings</h3>
+        <p>Cut your electricity bills by up to 90% every month by using clean, free solar energy.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/67/money-bag.png" alt="Tax Benefits">
+        <h3>Tax Benefits</h3>
+        <p>Businesses can claim depreciation and enjoy tax benefits on solar investments.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/67/discount--v1.png" alt="Govt Subsidy">
+        <h3>Govt Subsidy</h3>
+        <p>Avail up to 40% subsidy from Indian Government on solar panel installation for homes.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/67/nature.png" alt="Eco Friendly">
+        <h3>Eco-Friendly</h3>
+        <p>Join the green movement and reduce your carbon emissions by switching to solar.</p>
+      </div>
+    </div>
+</section>
+
+  <section class="gallery">
+    <h2>Our Solar Installations</h2>
+    <div class="gallery-images">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.udSKPCL6B-i7vTUeIzwolQHaE8?r=0&w=316&h=316&c=7" alt="Solar Installation 1">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.nXcLshWkXnle9HmnUJivEAHaE8?r=0&w=316&h=316&c=7" alt="Solar Installation 2">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.KXxmsyPyv_XVLiJpmDOLKwHaE8?r=0&w=316&h=316&c=7" alt="Solar Panels 3">
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>Founder Speaks</h2>
+    <p>Check out our Founder, Mr. BP Sharma, talk about the importance of Solar Panels and how it’s a game changer for the future. He also explains the difference between on-grid and off-grid systems.</p>
+    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:af4ffcf0-aa20-4e1e-a477-4d3c3ae2aa50?comment_id=7e641622-0a34-43f2-8b70-e7aa5b5571d7" target="_blank">Watch the Explanation</a>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Our Solar Expert</h2>
+    <p><strong>Mr. BP Sharma</strong> <br/> 📍Gurugram</p>
+    <a href="https://wa.me/919311641426" target="_blank">Message on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 7 Star Green Energy | Clean Power for a Brighter Tomorrow</p>
+  </footer>
+</body>
+</html> 
